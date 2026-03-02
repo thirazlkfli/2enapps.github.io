@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products & Services - 2EN APPS SDN BHD</title>
+    <link rel="icon" href="images/logo.jpg">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Style Khas untuk Service Cards */
+        .service-box {
+            background: #fff;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            height: 100%;
+            border-bottom: 5px solid transparent;
+        }
+        
+        /* Bila hover, kad naik atas & ada line biru kat bawah */
+        .service-box:hover {
+            transform: translateY(-10px);
+            border-bottom: 5px solid #0d6efd;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            color: #0d6efd;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .section-title {
+            position: relative;
+            margin-bottom: 50px;
+        }
+        
+        /* Garis biru kecil bawah tajuk */
+        .section-title::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -15px;
+            width: 50px;
+            height: 3px;
+            background-color: #0d6efd;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+                <img src="images/logo 2enn apps sdn bhd.jpg" alt="Logo" width="40" height="40" class="d-inline-block align-text-top me-2 rounded">
+                <span><span class="text-primary">2EN APPS</span> SDN BHD</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="client.html">Our Client</a></li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="product_and_service.html" id="navbarDropdown" role="button" aria-expanded="false">Product and Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">System Development</a></li>
+                            <li><a class="dropdown-item" href="#">Web Development</a></li>
+                            <li><a class="dropdown-item" href="#">Smartphone App Development</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Hardware & Software Integration</a></li>
+                            <li><a class="dropdown-item" href="#">Research & Development</a></li>
+                            <li><a class="dropdown-item" href="#">Project Management</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a href="reach_us.html" class="btn btn-primary rounded-pill px-4 ms-3 d-none d-lg-block">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section d-flex align-items-center justify-content-center" 
+        style="height: 40vh; background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1504384308090-c54be3855833?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center;">
+        
+        <div class="text-center text-white">
+            <h1 class="display-4 fw-bold">Product and Services</h1>
+            <p class="lead">Comprehensive IT Services Tailored for Your Business</p>
+        </div>
+    </header>
+
+    <section class="py-5">
+        <div class="container py-4 text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <h6 class="text-primary fw-bold text-uppercase">What We Do</h6>
+                    <p class="text-muted">
+                        2en Apps provide a comprehensive line of on demand and innovative IT products and services that help companies large and small extract maximum returns on their IT investments. We collaborate with our customers to create tailored business solutions that meet their unique needs and help them compete more effectively. Our strength is the breadth and depth of our IT experience, industry knowledge, and technical capabilities that we can offer across to our customers.
+
+We offer an integrated ICT Services Portfolio inclusive of System/Software Development, Applications Development & Web Development. We specialize in Applications & Web Development Analysis & Optimization, Search Engine Optimization and Smartphones Applications. Our experience also revolves integrated solutions including Portal development, Website Design and Maintenance, creating and managing Web Mail, enablement for e-Commerce and implementing the integration of Secure Payment Gateways.
+
+Among others, our services include system and infrastructure security assessment, networking, server and storage configuration and other IT related services.
+
+Our Technical Team is proficient in delivering quality Software Services such as Business Process Automation, assistance in Software Enhancement & Migration and IT Support Services using all the latest tools and technologies. Our QA & Testing services, including comprehensive and state-of-art Test Automation Options, have enabled a number of clients to get the maximum returns from their IT Investments.
+
+2en Apps has the talent and creativity to explore and open up newer horizons for our Clients
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-box text-center">
+                        <i class="bi bi-laptop service-icon"></i>
+                        <h4 class="fw-bold mb-3">System Development</h4>
+                        <p class="text-muted small">
+                           We offer fully custom made system development to suite your organisation requirement using the platform of your choice. We, however are an advocate of open source technology. The system can be in the form of web base system, client server system, hybrid of both, middle ware and others.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-box text-center">
+                        <i class="bi bi-globe service-icon"></i>
+                        <h4 class="fw-bold mb-3">Web Development</h4>
+                        <p class="text-muted small">
+                            Apart from system development, we also offer the service for online presence to any organisation looking to be part of the World Wide Web. This includes the development of website using content management system, social media presence such as facebook page, twitter and youtube
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-box text-center">
+                        <i class="bi bi-phone service-icon"></i>
+                        <h4 class="fw-bold mb-3">Smartphone App Development</h4>
+                        <p class="text-muted small">
+                            We also offer an enterprise mobile application running on Windows Mobile, iOS and Android platform. The mobile app can be of the stand alone nature or to complement the main system, e.g.: A mobile app for Compound System, Asset Tracking System
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-box text-center">
+                        <i class="bi bi-cpu service-icon"></i>
+                        <h4 class="fw-bold mb-3">Hardware & Software Integration</h4>
+                        <p class="text-muted small">
+                           Unique to few IT companies in Malaysia, we cover both hardware and software, thus eliminates dependency to third party for project that involve both hardware and software.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-box text-center">
+                        <i class="bi bi-search service-icon"></i>
+                        <h4 class="fw-bold mb-3">Research & Development</h4>
+                        <p class="text-muted small">
+                           Continuous Improvement, kaizen. Through R&D we continously doing internal research and development to better develop ourself and also to better serve our clients. Our R&D product is also part of our software offering that we offer as hosted services. Our R&D includes mobile app, complex web system and also hardware customization.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-box text-center">
+                        <i class="bi bi-kanban service-icon"></i>
+                        <h4 class="fw-bold mb-3">Project Management</h4>
+                        <p class="text-muted small">
+                            To ensure success and provide business value to our customers through a set of value-added services, including our Project Management, Business /Domain and Application Consulting, Technical Consulting, and Training. 2en Apps is responsible for helping clients maximize their investment with our applications.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-3">Ready to Start Your Project?</h2>
+            <p class="lead text-muted mb-4">Let's discuss how we can help your business grow with technology.</p>
+            <a href="reach_us.html" class="btn btn-primary btn-lg rounded-pill px-5">Get a Quote</a>
+        </div>
+    </section>
+
+    <footer style="background: #1a1d20; color: #bbb; padding: 60px 0 20px;">
+        <div class="container">
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
